@@ -53,14 +53,10 @@ public class Practice_1
 
         Scanner scanner = new Scanner(System.in);
         int[] array = new int[5];
-        int sum = 0;
 
         System.out.println("Введите 5 чисел: ");
         for(int i = 0; i < array.length; i++)
-        {
             array[i] = scanner.nextInt();
-            sum += array[i];
-        }
 
         int sumDoWhile = 0;
         int sumWhile = 0;
