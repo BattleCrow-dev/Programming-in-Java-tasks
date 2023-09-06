@@ -1,4 +1,4 @@
-package ru.mirea.lab1;
+package ru.mirea.practice1;
 
 import java.util.Scanner;
 
