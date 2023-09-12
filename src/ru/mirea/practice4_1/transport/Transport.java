@@ -4,12 +4,18 @@ public abstract class Transport {
     private final double costPerKilometer;
     private final double speed;
 
-    public Transport(double costPerKilometer, double speed) {
+    protected Transport(double costPerKilometer, double speed) {
         this.costPerKilometer = costPerKilometer;
         this.speed = speed;
     }
 
-    public void calculateCostAndTime(double kilometers){
-        System.out.println("Cost: " + costPerKilometer * kilometers +"\nTime: " + kilometers / speed);
+    public double getCostPerKilometer() {
+        return costPerKilometer;
     }
+
+    public double getSpeed() {
+        return speed;
+    }
+
+    public abstract void calculateCostAndTime(double kilometers);
 }

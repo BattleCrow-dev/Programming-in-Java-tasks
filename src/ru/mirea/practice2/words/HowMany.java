@@ -1,6 +1,7 @@
 package ru.mirea.practice2.words;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class HowMany {
     public static void main(String[] args) {
@@ -10,10 +11,6 @@ public class HowMany {
         System.out.print("Введите строку текста : ");
         line = scanner.nextLine();
 
-        int wordsCount = 1;
-        for(int i = 0; i < line.length(); i++)
-            wordsCount += line.charAt(i) == ' ' ? 1 : 0;
-
-        System.out.println("Количество слов: " + wordsCount);
+        System.out.println("Количество слов: " + new StringTokenizer(line, " ").countTokens());
     }
 }

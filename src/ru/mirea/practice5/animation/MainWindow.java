@@ -1,7 +1,6 @@
 package ru.mirea.practice5.animation;
 
 import javax.swing.*;
-import java.awt.*;
 import java.util.Objects;
 
 public class MainWindow extends JFrame{
@@ -9,7 +8,7 @@ public class MainWindow extends JFrame{
         super("Animation frame");
         ImageIcon iconFile = new ImageIcon(Objects.requireNonNull(MainWindow.class.getResource("images/icon.png")));
         setIconImage(iconFile.getImage());
-        setSize(175, 175);
+        setSize(250, 149);
     }
 
     public void Animation(){

@@ -1,7 +1,7 @@
 package ru.mirea.practice2.point;
 
 public class Circle {
-    private Point center = new Point();
+    private Point center;
     private double radius = 0;
 
     public Circle(){

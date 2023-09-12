@@ -6,6 +6,7 @@ public class Tester {
         Atelier atelier = new Atelier();
 
         atelier.dressWomen(clothes);
+        System.out.println();
         atelier.dressMan(clothes);
     }
 }

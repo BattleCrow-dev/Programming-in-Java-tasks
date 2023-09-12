@@ -5,7 +5,7 @@ public class Report {
 
     public static void generateReport() {
         for(Employee employee : employees){
-            System.out.printf("%s : %.2f", employee.getFullName(), employee.getSalary());
+            System.out.printf("%-10s : %10.2f", employee.getFullName(), employee.getSalary());
             System.out.println();
         }
     }

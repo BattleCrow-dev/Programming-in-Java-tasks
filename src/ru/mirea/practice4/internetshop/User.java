@@ -36,6 +36,7 @@ public class User {
             basket.PushToBasket(catalog.GetProduct(name));
             catalog.DeleteFromShop(catalog.GetProduct(name));
             System.out.println("Success");
+            return;
         }
         System.out.println("Not found!");
     }
@@ -45,6 +46,7 @@ public class User {
             catalog.PushToShop(basket.GetProduct(name));
             basket.RemoveFromBasket(basket.GetProduct(name));
             System.out.println("Success");
+            return;
         }
         System.out.println("Not found!");
     }
