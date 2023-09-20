@@ -8,13 +8,13 @@ public class Tester {
         System.out.println("Pupils:");
         for(Learner learner : learners){
             if(learner instanceof Pupil)
-                System.out.println(learner.getClass().getName().toString());
+                System.out.println(learner.getClass().getName());
         }
 
         System.out.println("\nStudents:");
         for(Learner learner : learners){
             if(learner instanceof Student)
-                System.out.println(learner.getClass().getName().toString());
+                System.out.println(learner.getClass().getName());
         }
     }
 }
