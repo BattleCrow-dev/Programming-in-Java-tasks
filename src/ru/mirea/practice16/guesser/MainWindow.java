@@ -13,6 +13,8 @@ public class MainWindow extends JFrame {
 
     public MainWindow() {
         super("Guesser");
+
+        System.out.println(answer);
         setIconImage(new ImageIcon(Objects.requireNonNull(MainWindow.class.getResource("images/icon.png"))).getImage());
         setSize(250, 200);
 
@@ -61,19 +63,19 @@ public class MainWindow extends JFrame {
 
                 tryText.setText("Попытка: " + ++tryCount);
 
-                if(value > answer){
-                    descText.setText("Ваше число больше");
-                }
-                else if(value < answer){
-                    descText.setText("Ваше число меньше");
-                }
-                else{
-                    descText.setText("Угадал!");
-                }
-
                 if(tryCount > 3){
                     descText.setText("Вы проиграли!");
                     tryText.setText("Попытка: ∞");
+                }
+                else {
+
+                    if (value > answer) {
+                        descText.setText("Ваше число больше");
+                    } else if (value < answer) {
+                        descText.setText("Ваше число меньше");
+                    } else {
+                        descText.setText("Угадал!");
+                    }
                 }
             }
         });
